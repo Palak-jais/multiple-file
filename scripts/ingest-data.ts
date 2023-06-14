@@ -4,21 +4,27 @@ import { PineconeStore } from 'langchain/vectorstores/pinecone';
 import { pinecone } from '@/utils/pinecone-client';
 import { PINECONE_INDEX_NAME, PINECONE_NAME_SPACE } from '@/config/pinecone';
 import { PDFLoader } from 'langchain/document_loaders/fs/pdf';
-// import { CSVLoader } from "langchain/document_loaders/fs/csv";
+import {DirectoryLoader} from 'langchain/document_loaders/fs/directory'
+import{JSONLoader,JSONLinesLoader} from 'langchain/document_loaders/fs/json'
+import { TextLoader } from "langchain/document_loaders/fs/text";
+import { CSVLoader } from "langchain/document_loaders/fs/csv";
 
 /* Name of directory to retrieve your files from */
-const filePath = `${process.env.DATA_FILE_PATH}`;
+//const filePath = `${process.env.DATA_FILE_PATH}`;
 
 export const run = async () => {
   try {
     /*load raw docs from the all files in the directory */
-    // const directoryLoader = new DirectoryLoader(filePath, {
-    //   '.pdf': (path) => new CustomPDFLoader(path),
-    // });
+    const directoryLoader = new DirectoryLoader('.//data/example', {     
+      '.json': (path) => new JSONLoader(path, "/texts"),
+      '.jsonl': (path) => new JSONLinesLoader(path, "/html"),
+      ".txt": (path) => new TextLoader(path),
+      ".csv": (path) => new CSVLoader(path, "text"),
+     });
 
-    const directoryLoader = new PDFLoader(filePath);
+    //const directoryLoader = new PDFLoader(filePath);
     // const directoryLoader = new CSVLoader(filePath);
-
+    
     const rawDocs = await directoryLoader.load();
 
     /* Split text into chunks */

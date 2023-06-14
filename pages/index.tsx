@@ -13,7 +13,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-const appName = `azure cognitive services openai`;
+const appName = `multiple files`;
 
 export default function Home() {
   const [query, setQuery] = useState<string>("");
@@ -27,7 +27,7 @@ export default function Home() {
   }>({
     messages: [
       {
-        message: `Ask me anything about ${appName}`,
+        message: `Ask me anything about multiple files`,
         type: "apiMessage",
       },
     ],

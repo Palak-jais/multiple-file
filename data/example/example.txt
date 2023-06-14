@@ -1,0 +1,33 @@
+A text file is used to store standard and structured textual data or information that is human readable. It is defined in several different formats, including the most popular ASCII for cross-platform usage, and ANSI for Windows-based operating platforms. It lacks text formatting abilities, such as text alignment, bold text and font styles.
+In a Windows operating system (OS), a text file is created using a text editor, such as Notepad or Word. It has a file extension of .txt.
+Besides simply text, a text file is used to write and store source code for virtually all programming languages, such as Java or PHP. The created file can be converted to the respective programming language by changing the file extension from .txt to .php or .cpp.
+TEXT files store text that can be viewed and edited in Microsoft Notepad, Apple TextEdit, and other text editors. Unlike .RTF, .DOCX, and .PAGES files, TEXT files cannot include advanced formatting, such as bolding, italicization, font styles, and text alignment.
+
+Because TEXT files cannot include formatting, they typically contain only basic information, such as notes, step-by-step instructions, and program information logs. Software developers may also package TEXT files with games and tools they distribute to contain instructions or other information about the software.
+
+Users who need to create more complicated text documents, such as resumes, reports, letters, or flyers, typically do not save those documents as TEXT files. Instead, they use Microsoft Word or Apple Pages to create and save documents as DOCX or PAGES files.
+
+How to open a TEXT file
+You can open a TEXT file in any text editor and most popular web browsers. Below, you'll find platform-specific instructions for opening TEXT files.
+
+How do I open a TEXT file in Windows?
+In Windows, you can open a TEXT file in Microsoft Notepad or Microsoft WordPad, both of which come included with Windows. To open a TEXT file in Notepad:
+
+From the Windows Start menu, select Windows Accessories → Notepad.
+After Notepad opens, select File → Open....
+Navigate to and open your TEXT file.
+How do I open a TEXT file on a Mac?
+In macOS, you can open a TEXT file in Apple TextEdit, which comes included with the operating system. To open a TEXT file in TextEdit:
+
+From the Finder or Launchpad, open TextEdit.
+In the file browser window that appears, navigate to and open your TEXT file.
+How do I open a TEXT file in Chrome OS?
+On Chromebooks, you can open a TEXT file in Google Chrome Text, which comes included with Chrome OS. To open a TEXT file in Google Chrome Text:
+
+Open the Chrome OS Launcher. Then, open Google Chrome Text.
+Select Google Chrome Text's Open button.
+Navigate to and open your TEXT file.
+How do I open a TEXT file in my web browser?
+The Google Chrome, Mozilla Firefox, and Microsoft Edge web browsers all allow users to open TEXT files. Keep in mind, however, that you will not be able to edit your TEXT file in a web browser.
+
+In Chrome and Firefox, you can simply drag and drop your file into a browser window to open it. In Microsoft Edge, you must copy and paste your file's location into Edge's address bar to open the file.
